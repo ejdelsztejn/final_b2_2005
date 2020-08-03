@@ -214,8 +214,23 @@
           1,
           null
         ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/final_b2_2005/app/models/airline.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/final_b2_2005/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1596467235
+    "timestamp": 1596467427
   }
 }
