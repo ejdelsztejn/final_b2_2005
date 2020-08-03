@@ -220,26 +220,19 @@
       },
       "/Users/jejdelman/turing/module2/challenges/final_b2_2005/spec/features/passengers/show_spec.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           null,
           1,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
           1,
@@ -258,6 +251,23 @@
           null,
           1,
           1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
           null,
           null,
           null,
@@ -342,6 +352,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -390,12 +401,12 @@
         "lines": [
           1,
           1,
-          2,
+          3,
           null,
           null
         ]
       }
     },
-    "timestamp": 1596471658
+    "timestamp": 1596472311
   }
 }

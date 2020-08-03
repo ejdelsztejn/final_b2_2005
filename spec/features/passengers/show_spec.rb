@@ -30,6 +30,23 @@ RSpec.describe 'Passenger Show Page' do
         click_on "#{@flight_1.number}"
         expect(current_path).to eq("/flights/#{@flight_1.id}")
       end
+
+      it "I see a form to add a flight. When I fill in the form with a flight number,
+          And click submit, I'm taken back to the passengers show page
+          And I can see the flight number of the flight I just added" do
+        flight_4 = @airline.flights.create!(number: "891", date: "8/18/2020", time: "6:00 PM EST", departure_city: "Boston - Logan Airport", arrival_city: "New York City - JFK")
+
+        visit "/passengers/#{@margo.id}"
+
+        expect(page).to have_content("Add a New Flight")
+
+        fill_in "Flight number", with: "891"
+
+        click_on "Submit"
+
+        expect(current_path).to eq("/passengers/#{@margo.id}")
+        expect(page).to have_link(flight_4.number)
+      end
     end
   end
 end
