@@ -43,7 +43,7 @@ RSpec.describe 'Flight Show Page' do
 
     it 'I see the number of minors and adults on the flight' do
       visit "/flights/#{@flight_1.id}"
-
+      save_and_open_page
       expect(page).to have_content("Number of minors: 2")
       expect(page).to have_content("Number of adults: 4")
     end
