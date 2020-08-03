@@ -1,6 +1,6 @@
 <h1>Flight Number: <%= @flight.number %><h1>
 <br>
-<h4>Airline: <%= Airline.find(@flight.airline_id).name %></h4>
+<h4>Airline: <%= @flight.airline.name %></h4>
 <h4>Date: <%= @flight.date %></h4>
 <h4>Time: <%= @flight.time %></h4>
 <h4>Departure City: <%= @flight.departure_city %></h4>

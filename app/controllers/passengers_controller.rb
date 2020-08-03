@@ -5,7 +5,7 @@ class PassengersController < ApplicationController
 
   def update
     passenger = Passenger.find(params[:id])
-    flight = Flight.where({number: params[:flight_number].to_i}).first
+    flight =  Flight.where(number: params[:flight_number].to_i).first
     FlightPassenger.create(flight_id: flight.id, passenger_id: passenger.id)
     redirect_to "/passengers/#{passenger.id}"
   end
