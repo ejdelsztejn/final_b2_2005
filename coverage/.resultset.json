@@ -235,22 +235,32 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
-          0,
-          0,
-          0,
+          1,
+          2,
+          2,
           null,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/final_b2_2005/app/models/flight.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1596467673
+    "timestamp": 1596467802
   }
 }
