@@ -8,9 +8,15 @@ RSpec.describe 'Flight Show Page' do
       @jimmy = Passenger.create!(name: "Jimmy Lucia", age: 12)
       @margo = Passenger.create!(name: "Margo Santander", age: 32)
       @franco = Passenger.create!(name: "Franco Plants", age: 56)
+      @moses = Passenger.create!(name: "Moses Adelson", age: 2)
+      @abigail = Passenger.create!(name: "Abigail Weis", age: 90)
+      @amos = Passenger.create!(name: "Amos Krayem", age: 21)
       FlightPassenger.create!(flight_id: @flight_1.id, passenger_id: @jimmy.id)
       FlightPassenger.create!(flight_id: @flight_1.id, passenger_id: @margo.id)
       FlightPassenger.create!(flight_id: @flight_1.id, passenger_id: @franco.id)
+      FlightPassenger.create!(flight_id: @flight_1.id, passenger_id: @moses.id)
+      FlightPassenger.create!(flight_id: @flight_1.id, passenger_id: @abigail.id)
+      FlightPassenger.create!(flight_id: @flight_1.id, passenger_id: @amos.id)
     end
 
     it 'I see all of that flights information including: number, date, time, departure city, arrival city' do
@@ -30,13 +36,16 @@ RSpec.describe 'Flight Show Page' do
       expect(page).to have_content(@jimmy.name)
       expect(page).to have_content(@margo.name)
       expect(page).to have_content(@franco.name)
+      expect(page).to have_content(@moses.name)
+      expect(page).to have_content(@abigail.name)
+      expect(page).to have_content(@amos.name)
     end
 
     it 'I see the number of minors and adults on the flight' do
       visit "/flights/#{@flight_1.id}"
 
-      expect(page).to have_content("Number of minors: 1")
-      expect(page).to have_content("Number of adults: 2")
+      expect(page).to have_content("Number of minors: 2")
+      expect(page).to have_content("Number of adults: 4")
     end
   end
 end
